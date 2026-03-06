@@ -18,10 +18,13 @@ bouton.addEventListener("click",() => {
     const newDiv = document.createElement("div")
     const newP1 = document.createElement("p")
     const newP2 = document.createElement("p")
-    newP1.textContent = texte.value; 
-    newP2.textContent = auteurs.value;
+    const newHr = document.createElement("hr")
+
+    newP1.textContent = " Citation : " + texte.value; 
+    newP2.textContent = " Auteurs : " + auteurs.value;
     newDiv.appendChild(newP1)
     newDiv.appendChild(newP2)
+    newDiv.appendChild(newHr)
     liste.appendChild(newDiv)
     counter++
     titre.textContent=`${counter} citation`
